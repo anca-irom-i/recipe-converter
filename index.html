@@ -5,7 +5,7 @@
   <title>Magic Recipe Converter</title>
 </head>
 <body>
-  <h1>🧙‍♂️ Magic Recipe Converter1.0</h1>
+  <h1>🧙‍♂️ Magic Recipe Converter1.1</h1>
   <form id="recipeForm">
   <label for="url">Paste your recipe URL:</label><br>
   <input type="text" id="url" name="url" required style="width: 300px;"><br><br>
@@ -32,7 +32,7 @@ document.getElementById('recipeForm').addEventListener('submit', async function(
     });
 
     const data = await response.json();
-
+debugger;
     // Assuming your webhook returns { list: ["item1", "item2", ...] }
     if (data.list && Array.isArray(data.list)) {
       resultDiv.innerHTML = "<h3>🛒 Shopping List:</h3><ul>" +
